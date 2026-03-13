@@ -1,0 +1,79 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Content {
+  id               Int      @id @default(autoincrement())
+  settings         Json     @default("{}")
+  hero             Json     @default("{}")
+  about            Json     @default("{}")
+  executiveSummary Json     @default("{}")
+  qhse             Json     @default("{}")
+  equipment        Json     @default("[]")
+  leadership       Json     @default("[]")
+  softServices     Json     @default("[]")
+  hardServices     Json     @default("[]")
+  sectors          Json     @default("[]")
+  partners         Json     @default("[]")
+  reviews          Json     @default("[]")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("content")
+}
+
+model JobApplication {
+  id          Int      @id @default(autoincrement())
+  firstName   String
+  lastName    String
+  phone       String
+  email       String
+  position    String
+  coverLetter String?
+  resumeUrl   String
+  resumeType  String   @default("pdf")
+  status      String   @default("New")
+  emailSent   Boolean  @default(false)
+  ipAddress   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("job_applications")
+}
+
+model Inquiry {
+  id        Int      @id @default(autoincrement())
+  name      String
+  phone     String
+  email     String
+  service   String
+  date      String?
+  details   String?
+  status    String   @default("New")
+  emailSent Boolean  @default(false)
+  ipAddress String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("inquiries")
+}
+
+model EmailLog {
+  id          Int      @id @default(autoincrement())
+  type        String // 'inquiry' or 'job_application'
+  recipientId Int // ID of the inquiry or job application
+  recipient   String // Email address
+  subject     String
+  status      String // 'sent', 'failed', 'pending'
+  messageId   String?
+  error       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("email_logs")
+}

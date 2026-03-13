@@ -1,0 +1,316 @@
+{
+  "settings": {
+    "showReviews": false,
+    "showPartners": true,
+    "showServices": true,
+    "showSectors": true,
+    "showQHSE": true,
+    "showEquipment": true,
+    "showLeadership": true,
+    "showExecutiveSummary": true,
+    "showServiceSlider": true,
+    "showHero": true,
+    "showAbout": true
+  },
+  "hero": {
+    "title1": "ELITE INTERNATIONAL",
+    "title2": "COMPANY",
+    "subtitle": "FOR PUBLIC FACILITY MANAGEMENT",
+    "description": "Redefining public facility management through seamless integration, technical precision, and uncompromising standards of excellence across Kuwait.",
+    "primaryCTA": "Get Quote Now",
+    "secondaryCTA": "Our Expertise"
+  },
+  "leadership": [
+    {
+      "id": 1,
+      "prefix": "His Highness",
+      "name": "Sheikh Mishal Al-Ahmad Al-Jaber Al-Sabah",
+      "role": "Amir of the State of Kuwait",
+      "image": "/amir.png"
+    },
+    {
+      "id": 2,
+      "prefix": "His Highness",
+      "name": "Sheikh Sabah Al-Khaled Al-Hamad Al-Mubarak Al-Sabah",
+      "role": "Crown Prince of the State of Kuwait",
+      "image": "/crown_prince.jpg"
+    }
+  ],
+  "executiveSummary": {
+    "title": "Executive Summary",
+    "paragraphs": [
+      "Elite International Company For Public Facility Management is a comprehensive facility management solutions provider delivering end-to-end, integrated, and scalable services designed to support the efficient operation, maintenance, and long-term enhancement of commercial, industrial, institutional, and residential assets.",
+      "With deep industry expertise and a client-focused approach, Elite International offers both hard and soft facility management services, seamlessly integrated through standardized processes, advanced technologies, and a highly skilled workforce.",
+      "We are committed to operational excellence and continuous improvement, leveraging modern facility management systems, real-time performance monitoring, and clearly defined service-level agreements (SLAs) to ensure transparency and accountability.",
+      "Driven by a culture of safety, professionalism, and innovation, Elite International maintains rigorous Quality, Health, Safety, and Environmental (QHSE) standards. Our experienced management team and dedicated staff work collaboratively to deliver future-ready facility management solutions."
+    ]
+  },
+  "about": {
+    "title": "Who We Are",
+    "description": "Elite International Company is a leader in public facility management across Kuwait, dedicated to operational excellence, technical precision, and sustainable solutions.",
+    "mission": "To deliver comprehensive, reliable, and compliant facility management services that ensure the safety, functionality, and sustainability of public-sector facilities. We are committed to protecting public assets through proactive maintenance, efficient resource management, and strict adherence to regulatory standards.",
+    "vision": [
+      {
+        "title": "Strategic Leadership",
+        "desc": "To become a benchmark organization known for operational excellence."
+      },
+      {
+        "title": "Sustainability Focused",
+        "desc": "Integrating sustainability and preventive asset management."
+      },
+      {
+        "title": "Community Value",
+        "desc": "Ensuring safe and accessible public spaces for all."
+      }
+    ]
+  },
+  "qhse": {
+    "title": "QHSE Commitment",
+    "description": "Elite International maintains strict Quality, Health, Safety, and Environmental standards aligned with international best practices. We prioritize the health and safety of people, assets, and environments through proactive risk management.",
+    "commitments": [
+      "Risk assessment and hazard identification",
+      "Compliance with safety regulations and procedures",
+      "Regular training and toolbox talks",
+      "Environmental responsibility and waste management",
+      "Incident reporting and corrective actions",
+      "Safety and quality embedded in every aspect"
+    ],
+    "image": "/images/services/safety.png"
+  },
+  "equipment": [
+    {
+      "id": 1,
+      "title": "Professional Cleaning Cart",
+      "description": "High-capacity mobile cleaning stations equipped with all necessary supplies for efficient housekeeping operations.",
+      "image": "/images/services/Carrito de aseo profesional.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Industrial Cleaning Tools",
+      "description": "Comprehensive set of professional-grade cleaning tools including brooms, mops, and sanitization equipment.",
+      "image": "/images/services/Cleaning tools stock image_ Image of broom, sanitize, water - 3435125.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Floor Care Equipment",
+      "description": "Advanced floor maintenance machinery for deep cleaning, polishing, and restoration of various floor surfaces.",
+      "image": "/images/services/MZL floor care equipment.jpg"
+    },
+    {
+      "id": 4,
+      "title": "High-Pressure Washer",
+      "description": "SIMPSON PowerShot 3300 PSI gas pressure washer with Honda GX200 engine for heavy-duty cleaning tasks.",
+      "image": "/images/services/Pressure Washer Company & Manufacturer _Simpson.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Landscaping Trimmer",
+      "description": "Professional string trimmer for precise lawn and garden maintenance, ensuring perfectly manicured outdoor spaces.",
+      "image": "/images/services/String Trimmer for Lawn & Garden Maintenance.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Automated Lawn Care System",
+      "description": "Modern robotic lawn care solution providing consistent, efficient maintenance for large green areas year-round.",
+      "image": "/images/services/The Modern Solution for a Lush, Green Yard All Year Round.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Professional Maintenance Equipment",
+      "description": "Specialized tools and equipment for comprehensive facility maintenance and repair operations.",
+      "image": "/images/services/WhatsApp Image 2026-01-27 at 11.29.06 PM.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Advanced Cleaning Systems",
+      "description": "State-of-the-art cleaning systems designed for maximum efficiency in commercial and industrial environments.",
+      "image": "/images/services/WhatsApp Image 2026-01-27 at 11.29.07 PM.jpeg"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Ahmed Al-Farsi",
+      "text": "Elite International has been managing our corporate offices for two years. Their attention to detail in soft services is unmatched in Kuwait.",
+      "role": "Facility Manager, Al-Hamra Tower",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Sarah Al-Rashidi",
+      "text": "The security team is professional and always alert. We feel much safer with their 24/7 surveillance solutions.",
+      "role": "HR Director, KIPCO",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Michael Thompson",
+      "text": "Reliable Hard Services! They fixed our HVAC issues overnight, ensuring no downtime for our medical facility.",
+      "role": "COO, Specialized Care Hospital",
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "name": "Fatima Al-Sabah",
+      "text": "Their cleaning staff is meticulous. Our public spaces have never looked better. Highly recommend their integrated approach.",
+      "role": "Director, Cultural Center",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "name": "Abdullah Ali",
+      "text": "Great response time and professional management. They really understand the local market needs.",
+      "role": "Project Manager, Jaber Causeway",
+      "rating": 5
+    }
+  ],
+  "softServices": [
+    {
+      "id": 1,
+      "title": "Housekeeping & Cleaning",
+      "desc": "Routine cleaning, disinfection, deep cleaning, and waste management for hygienic environments.",
+      "details": [
+        "Routine upkeep of offices & public areas",
+        "Restroom disinfection",
+        "Deep cleaning of floors & carpets",
+        "Medical waste management"
+      ],
+      "image": "/images/services/housekeeping.png"
+    },
+    {
+      "id": 2,
+      "title": "Landscaping",
+      "desc": "Maintenance of lawns, gardens, and external areas to ensure visual appeal and environmental regulations.",
+      "details": [
+        "Lawn & garden maintenance",
+        "Irrigation system operation",
+        "Debris removal",
+        "Seasonal landscaping"
+      ],
+      "image": "/images/services/landscaping.png"
+    },
+    {
+      "id": 3,
+      "title": "Security & Surveillance",
+      "desc": "Access control, CCTV monitoring, and patrol services for safety and asset protection.",
+      "details": [
+        "Access control management",
+        "CCTV monitoring",
+        "Visitor management",
+        "Emergency response support"
+      ],
+      "image": "/images/services/security.png"
+    },
+    {
+      "id": 4,
+      "title": "Façade Cleaning",
+      "desc": "Specialized exterior cleaning ensures building safety, appearance, and longevity.",
+      "details": [
+        "Glass & aluminum cleaning",
+        "High-level cleaning",
+        "Pollutant removal",
+        "Safety compliance operations"
+      ],
+      "image": "/images/services/facade-cleaning.png"
+    }
+  ],
+  "hardServices": [
+    {
+      "id": 5,
+      "title": "HVAC Services",
+      "desc": "Operation, preventive maintenance, and repair of heating, ventilation, and air conditioning systems.",
+      "details": [
+        "Chillers & boilers maintenance",
+        "Ventilation systems",
+        "Energy monitoring",
+        "Emergency repairs"
+      ],
+      "image": "/images/services/hvac.png"
+    },
+    {
+      "id": 6,
+      "title": "Electrical Systems",
+      "desc": "Maintenance of power distribution, lighting, generators, and emergency systems.",
+      "details": [
+        "Power distribution maintenance",
+        "Lighting systems",
+        "Generator servicing",
+        "Fault inspection"
+      ],
+      "image": "/images/services/electric.png"
+    },
+    {
+      "id": 7,
+      "title": "Plumbing & Water",
+      "desc": "Maintenance of water supply, drainage, and sanitation systems ensuring proper flow and quality.",
+      "details": [
+        "Leak detection",
+        "Fixture replacement",
+        "Drainage maintenance",
+        "Water quality checks"
+      ],
+      "image": "/images/services/plumbing.png"
+    },
+    {
+      "id": 8,
+      "title": "Elevator Maintenance",
+      "desc": "Inspection and servicing of elevators and escalators to ensure reliability and safety.",
+      "details": [
+        "Safety inspections",
+        "Control panel checks",
+        "Preventive servicing",
+        "Emergency response"
+      ],
+      "image": "/images/services/elevator.png"
+    }
+  ],
+  "partners": [
+    "China state construction engineering corporation",
+    "China gezhouba",
+    "Metallurgical Corporation Of China Ltd.",
+    "Larsen and toubro",
+    "Siemens",
+    "General Electric (GE)",
+    "Polatyol YAPI SANAYI",
+    "HOT Engineering & Construction Co.-KSCC (HOTECC)",
+    "Action Energy Company",
+    "Schlumberger",
+    "Haliburton",
+    "NBTC",
+    "KIPIC",
+    "China harbour engineering company kuwait",
+    "Sinopec International Petroleum Service Corporation"
+  ],
+  "sectors": [
+    {
+      "id": 1,
+      "title": "Government & Public Facilities",
+      "image": "/images/services/security.png"
+    },
+    {
+      "id": 2,
+      "title": "Corporate Offices & Business Parks",
+      "image": "/images/services/facade-cleaning.png"
+    },
+    {
+      "id": 3,
+      "title": "Healthcare & Hospitals",
+      "image": "/images/services/housekeeping.png"
+    },
+    {
+      "id": 4,
+      "title": "Educational Institutions",
+      "image": "/images/services/landscaping.png"
+    },
+    {
+      "id": 5,
+      "title": "Retail & Commercial Complexes",
+      "image": "/images/services/hvac.png"
+    },
+    {
+      "id": 6,
+      "title": "Industrial & Manufacturing",
+      "image": "/images/services/electric.png"
+    }
+  ]
+}
