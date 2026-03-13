@@ -27,6 +27,13 @@ yarn-error.log*
 .env*.local
 .env.production
 
+# large asset folders (serve from public only)
+/All images/
+/Equepments/
+/Tools/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
