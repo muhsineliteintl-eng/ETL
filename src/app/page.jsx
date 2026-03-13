@@ -21,23 +21,35 @@ export default function Home() {
 
     useEffect(() => {
         setIsPageLoading(true);
-        
+
+        // Hard timeout — never stay stuck more than 10 seconds
+        const hardTimeout = setTimeout(() => {
+            setLoading(false);
+            setIsPageLoading(false);
+        }, 10000);
+
         const loadData = async () => {
             try {
-                const res = await fetch('/api/content', { cache: 'no-store' });
+                const controller = new AbortController();
+                const fetchTimeout = setTimeout(() => controller.abort(), 8000);
+
+                const res = await fetch('/api/content', {
+                    cache: 'no-store',
+                    signal: controller.signal,
+                });
+                clearTimeout(fetchTimeout);
+
                 if (!res.ok) throw new Error('Failed to fetch data');
                 const json = await res.json();
                 setData(json);
-                
-                // Small delay to ensure smooth transition
+            } catch (err) {
+                console.error('Data fetch error:', err);
+            } finally {
+                clearTimeout(hardTimeout);
                 setTimeout(() => {
                     setLoading(false);
                     setIsPageLoading(false);
                 }, 300);
-            } catch (err) {
-                console.error('Data fetch error:', err);
-                setLoading(false);
-                setIsPageLoading(false);
             }
         };
         loadData();
