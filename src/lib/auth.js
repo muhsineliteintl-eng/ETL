@@ -9,18 +9,15 @@ function getEnv() {
     const ADMIN_USERNAME = process.env.ADMIN_USERNAME;
     const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH;
 
-    console.log('Environment check:', {
-        hasJWT: !!JWT_SECRET,
-        hasUsername: !!ADMIN_USERNAME,
-        hasPasswordHash: !!ADMIN_PASSWORD_HASH,
-        JWT_SECRET: JWT_SECRET ? `${JWT_SECRET.substring(0, 10)}...` : 'MISSING',
-        ADMIN_USERNAME: ADMIN_USERNAME || 'MISSING',
-        ADMIN_PASSWORD_HASH: ADMIN_PASSWORD_HASH ? `${ADMIN_PASSWORD_HASH.substring(0, 10)}...` : 'MISSING'
-    });
-
     if (!JWT_SECRET || !ADMIN_USERNAME || !ADMIN_PASSWORD_HASH) {
-        throw new Error('Missing required authentication environment variables');
+        console.error('❌ AUTH ENV ERROR: Missing required variables!', {
+            hasJWT: !!JWT_SECRET,
+            hasUsername: !!ADMIN_USERNAME,
+            hasPasswordHash: !!ADMIN_PASSWORD_HASH
+        });
+        throw new Error('Authentication system is misconfigured. Please check environment variables.');
     }
+
     return { JWT_SECRET, ADMIN_USERNAME, ADMIN_PASSWORD_HASH };
 }
 
