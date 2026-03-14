@@ -3,8 +3,9 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL")
 }
 
 model Content {
@@ -36,12 +37,12 @@ model JobApplication {
   position    String
   coverLetter String?
   resumeUrl   String
-  resumeType  String   @default("pdf")
   status      String   @default("New")
   emailSent   Boolean  @default(false)
   ipAddress   String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
+  resumeType  String   @default("pdf")
 
   @@map("job_applications")
 }
@@ -65,11 +66,11 @@ model Inquiry {
 
 model EmailLog {
   id          Int      @id @default(autoincrement())
-  type        String // 'inquiry' or 'job_application'
-  recipientId Int // ID of the inquiry or job application
-  recipient   String // Email address
+  type        String
+  recipientId Int
+  recipient   String
   subject     String
-  status      String // 'sent', 'failed', 'pending'
+  status      String
   messageId   String?
   error       String?
   createdAt   DateTime @default(now())
