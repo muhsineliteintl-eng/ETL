@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # environment files (never commit these!)
-# .env  <-- commented out so Vercel can read it
+ .env  <-- commented out so Vercel can read it
 .env*.local
 .env.production
 
